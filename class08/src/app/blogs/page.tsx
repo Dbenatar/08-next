@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { getPosts } from "@/app/lib/posts";
+import { getPosts, getCategories } from "@/app/lib/posts";
 
 export default function Page() {
   const posts = getPosts();
+  const categories = getCategories();
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
